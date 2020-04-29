@@ -11,8 +11,7 @@ void main() {
         backgroundColor: Colors.white,
         body: Center(
           child: Image(
-            image: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuj2hThlzNTW4yspAlxRkZQljvWpA7pimAXCPqJ28HrTJh95A-&usqp=CAU'),
+            image: AssetImage('images/diabetesAwareness02.png'),
           ),
         ),
       ),
