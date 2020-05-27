@@ -41,46 +41,29 @@ class DiabetesCardApp extends StatelessWidget {
               ),
             ),
             Card(
-              color: Colors.grey.shade200,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Padding(
-                padding: EdgeInsets.all(20.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.phone, color: Colors.black),
-                    SizedBox(
-                      width: 20,
+                color: Colors.grey.shade200,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.black),
+                  title: Text(
+                    '+44 123 456 789',
+                    style: TextStyle(
+                      color: Colors.teal.shade600,
+                      fontSize: 20,
                     ),
-                    Text(
-                      '+44 123 456 789',
-                      style: TextStyle(
-                        color: Colors.teal.shade600,
-                        fontSize: 20,
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            ),
+                  ),
+                )),
             Card(
               color: Colors.grey.shade200,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Padding(
-                padding: EdgeInsets.all(20.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.email, color: Colors.black),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      'email@arkray.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade600,
-                        fontSize: 20,
-                      ),
-                    )
-                  ],
+              child: ListTile(
+                leading: Icon(Icons.email, color: Colors.black),
+                title: Text(
+                  'email@arkray.com',
+                  style: TextStyle(
+                    color: Colors.teal.shade600,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
