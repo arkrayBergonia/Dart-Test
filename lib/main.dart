@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+  DiabetesCardApp()
+}
+
+class DiabetesCardApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text('I am diabetic'),
@@ -15,6 +21,6 @@ void main() {
           ),
         ),
       ),
-    ),
-  );
+    ),;
+  }
 }
