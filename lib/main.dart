@@ -10,20 +10,38 @@ class DiabetesCardApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('I am diabetic'),
+          title: Text('I am Diabetic'),
           backgroundColor: Colors.red[700],
         ),
         backgroundColor: Colors.white,
         body: SafeArea(
-          child: Container(
-            height: 200,
-            width: 200,
-            margin: EdgeInsets.only(left: 30.0),
-            padding: EdgeInsets.all(20.0),
-            color: Colors.white,
-            child: Text('I am diabetic'),
-          ),
-        ),
+            child: Column(
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/linkedin.jpeg'),
+            ),
+            Text(
+              'Francis Bergonia',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 40,
+                color: Colors.teal,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'Diabetes Awareness Advocate',
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                fontSize: 20,
+                letterSpacing: 2.5,
+                color: Colors.teal.shade400,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        )),
       ),
     );
   }
