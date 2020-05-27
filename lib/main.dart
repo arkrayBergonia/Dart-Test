@@ -16,6 +16,7 @@ class DiabetesCardApp extends StatelessWidget {
         backgroundColor: Colors.white,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
@@ -38,6 +39,13 @@ class DiabetesCardApp extends StatelessWidget {
                 letterSpacing: 2.5,
                 color: Colors.grey.shade600,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+              width: 150,
+              child: Divider(
+                color: Colors.teal,
               ),
             ),
             Card(
