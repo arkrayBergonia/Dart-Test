@@ -10,7 +10,7 @@ class DiabetesCardApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('I am Diabetic'),
+          title: Text('Diabetes Card'),
           backgroundColor: Colors.red[700],
         ),
         backgroundColor: Colors.white,
@@ -22,22 +22,66 @@ class DiabetesCardApp extends StatelessWidget {
               backgroundImage: AssetImage('images/linkedin.jpeg'),
             ),
             Text(
-              'Francis Bergonia',
+              'フランシス・ベルゴニア',
               style: TextStyle(
                 fontFamily: 'Pacifico',
-                fontSize: 40,
-                color: Colors.teal,
+                fontSize: 25,
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'Diabetes Awareness Advocate',
+              '糖尿病教育擁護者',
               style: TextStyle(
                 fontFamily: 'Source Sans Pro',
                 fontSize: 20,
                 letterSpacing: 2.5,
-                color: Colors.teal.shade400,
+                color: Colors.grey.shade600,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            Card(
+              color: Colors.grey.shade200,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.phone, color: Colors.black),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      '+44 123 456 789',
+                      style: TextStyle(
+                        color: Colors.teal.shade600,
+                        fontSize: 20,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Card(
+              color: Colors.grey.shade200,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.email, color: Colors.black),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      'email@arkray.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade600,
+                        fontSize: 20,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ],
